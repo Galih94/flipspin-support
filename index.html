@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-     <style>
+    <style>
         :root {
-            --bg-color: #4D6A6D;
+            --bg-color: #C7C7C7;
             --text-color: #C7C7C7;
+            --card-color: #4D6A6D;
             --card-bg: #4C8C84;
             --link-color: #F6E8D7;
             --header-color: #C7C7C7;
+            --highlight-color: #f3e8d8;
         }
 
         body {
@@ -27,10 +30,42 @@
         }
 
         .container {
-            max-width: 750px;
+            max-width: 860px;
             margin: 60px auto;
-            padding: 0 20px;
+            padding: 24px;
+            background-color: var(--card-color);
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
         }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header img {
+            max-width: 140px;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            color: var(--header-color);
+            font-size: 36px;
+            margin: 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--header-color);
+            font-size: 24px;
+            margin-bottom: 16px;
+            border-bottom: 2px solid var(--highlight-color);
+            padding-bottom: 6px;
+        }
+
 
         h1 {
             color: var(--header-color);
@@ -58,11 +93,10 @@
             text-decoration: underline;
         }
 
-        .contact {
-            background-color: var(--card-bg);
-            padding: 18px 24px;
-            border-radius: 14px;
-            margin: 20px 0;
+        .contact-card {
+            background-color: var(--highlight-color);
+            padding: 18px 22px;
+            border-radius: 16px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
 
@@ -80,36 +114,64 @@
             font-size: 14px;
             color: #C7C7C7;
         }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 30px 16px;
+                padding: 18px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            section h2 {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <img src="logo_flipspin_clear_bg.png" alt="Game Logo" style="max-width: 180px; display: block; margin: 0 auto 30px;">
+        <img src="logo_flipspin_clear_bg.png" alt="Game Logo"
+            style="max-width: 180px; display: block; margin: 0 auto 30px;">
 
         <h1>FlipSpin — Support & Contact</h1>
-        <p>Thank you for playing <strong>FlipSpin</strong>! If you experience any issues, have feedback, or need assistance, feel free to contact us.</p>
+        <p>Thank you for playing <strong>FlipSpin</strong>! If you experience any issues, have feedback, or need
+            assistance, feel free to contact us.</p>
+        <section>
+            <div class="contact">
+                <p><strong>📧 Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+                <p><strong>🛠️ App Version:</strong> Please include your app version when reporting issues.</p>
+            </div>
+        </section>
 
-        <div class="contact">
-            <p><strong>📧 Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-            <p><strong>🛠️ App Version:</strong> Please include your app version when reporting issues.</p>
-        </div>
-
-        <h2>🔧 Common Questions</h2>
-        <ul>
-            <li><strong>Q:</strong> Is this game free to play?<br><strong>A:</strong> Yes, it is completely free with ads.</li>
-            <li><strong>Q:</strong> Where can I report a bug?<br><strong>A:</strong> Email us at <a href="mailto:galih.samodra.w@gmail.com">galih.samodra.w@gmail.com</a>.</li>
-            <li><strong>Q:</strong> I lost my data, can it be restored?<br><strong>A:</strong> This game does not use an online account system. Data is stored locally on your device.</li>
-        </ul>
-
-        <h2>💡 Feedback and Suggestions</h2>
-        <p>We're always looking to improve the game. Send your suggestions to <a href="mailto:galih.samodra.w@gmail.com">galih.samodra.w@gmail.com</a> — we'd love to hear from you.</p>
-
-        <h2>📜 Privacy Policy</h2>
-        <p><a href="https://galih94.github.io/flipspin-policy/index.html">View our Privacy Policy</a></p>
-
+        <section>
+            <h2>🔧 Common Questions</h2>
+            <ul>
+                <li><strong>Q:</strong> Is this game free to play?<br><strong>A:</strong> Yes, it is completely free
+                    with ads.</li>
+                <li><strong>Q:</strong> Where can I report a bug?<br><strong>A:</strong> Email us at <a
+                        href="mailto:galih.samodra.w@gmail.com">galih.samodra.w@gmail.com</a>.</li>
+                <li><strong>Q:</strong> I lost my data, can it be restored?<br><strong>A:</strong> This game does not
+                    use an online account system. Data is stored locally on your device.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>💡 Feedback and Suggestions</h2>
+            <p>We're always looking to improve the game. Send your suggestions to <a
+                    href="mailto:galih.samodra.w@gmail.com">galih.samodra.w@gmail.com</a> — we'd love to hear from you.
+            </p>
+        </section>
+        <section>
+            <h2>📜 Privacy Policy</h2>
+            <p><a href="https://galih94.github.io/flipspin-policy/index.html">View our Privacy Policy</a></p>
+        </section>
         <footer>
             &copy; 2025 FlipSpin. All rights reserved.
         </footer>
     </div>
 </body>
+
 </html>
