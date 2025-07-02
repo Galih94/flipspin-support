@@ -4,53 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlipSpin - Support</title>
-    <style>
+    <link rel="icon" type="image/png" href="logo_flipspin_clear_bg.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+     <style>
+        :root {
+            --bg-color: #FAF6F0;
+            --text-color: #2C2B2A;
+            --card-bg: #F3E8D8;
+            --link-color: #567189;
+            --header-color: #3A2F28;
+        }
+
         body {
             margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             font-family: 'Nunito', 'Segoe UI', sans-serif;
-            background-color: #FAF6F0;
-            color: #2C2B2A;
-            line-height: 1.6;
+            line-height: 1.7;
         }
+
         .container {
-            max-width: 700px;
+            max-width: 750px;
             margin: 60px auto;
             padding: 0 20px;
         }
+
         h1 {
-            color: #2C2B2A;
+            color: var(--header-color);
             font-size: 36px;
             margin-bottom: 10px;
         }
+
         h2 {
-            color: #3A2F28;
+            color: var(--header-color);
             font-size: 24px;
             margin-top: 40px;
         }
+
         p {
-            margin: 12px 0;
+            margin: 14px 0;
         }
+
         a {
-            color: #567189;
+            color: var(--link-color);
             text-decoration: none;
+            font-weight: 600;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .contact {
-            background-color: #F3E8D8;
-            padding: 15px 20px;
-            border-radius: 12px;
+            background-color: var(--card-bg);
+            padding: 18px 24px;
+            border-radius: 14px;
             margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
+
         ul {
             padding-left: 20px;
         }
+
+        li {
+            margin-bottom: 12px;
+        }
+
         footer {
             margin-top: 60px;
             text-align: center;
             font-size: 14px;
-            color: #7D7D7D;
+            color: #888;
         }
     </style>
 </head>
